@@ -1,0 +1,40 @@
+﻿@model Moto_GP.Models.OrderEntity
+
+@{
+    ViewBag.Title = "Customers Details";
+    Layout = "~/Views/Shared/Master_Layout.cshtml";
+}
+
+
+<div class="signup-container">
+    <h1>Fill Your Details</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <form class="form" action="/Home/InitiatePayment" method="post">
+                <div class="form-group">
+                    <label for="CustomerName">Name:</label>
+                    <input type="text" id="CustomerName" placeholder="Enter Your Name..." name="CustomerName" style="width:300px;" class="form-control" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="Mobile">Mobile Number:</label>
+                    <input type="tel" id="Mobile" style="width:300px;" placeholder="Enter Your Mobile Number..." name="Mobile" class="form-control" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="Email">Email Address:</label>
+                    <input type="email" id="Email" style="width:300px;" name="Email" placeholder="example@email.com" class="form-control" required/>
+                </div>
+
+                <div class="form-group">
+                    <label for="TotalAmount">Amount:</label>
+                    <input type="number" id="TotalAmount" style="width:300px;" name="TotalAmount" class="form-control" required/>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Continue To Pay" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

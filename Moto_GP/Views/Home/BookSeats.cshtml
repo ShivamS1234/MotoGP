@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "BookSeats";
+    Layout = "~/Views/Shared/Master_Layout.cshtml";
+}
+
+<div class="seatpopup">
+    <h2>How many seats?</h2>
+    <img src="~/Content/img/seats01.png" />
+    <div class="btndesign">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
+    </div>
+    <p>&#33; 1 is the minimum and 10 is the maximum quality of tickdets you can purchase for this event.</p>
+    <a href="@Url.Action("TicketRegistration", "Home")">Confirm your seats</a>
+</div>
+
